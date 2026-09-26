@@ -1,60 +1,92 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="320" viewBox="0 0 1400 320" role="img" aria-labelledby="title description">
-  <title id="title">Jithin Seemakurthi — Software Developer</title>
-  <desc id="description">A dark, modern technology banner highlighting applied AI, geospatial systems, and real-time applications.</desc>
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="380" viewBox="0 0 1440 380" role="img" aria-labelledby="title description">
+  <title id="title">Jithin Seemakurthi — Building useful intelligence</title>
+  <desc id="description">A vibrant technology banner representing local AI, geospatial intelligence, and real-time software.</desc>
   <defs>
-    <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0" stop-color="#071521" />
-      <stop offset="0.56" stop-color="#0b1726" />
-      <stop offset="1" stop-color="#10152b" />
+      <stop offset="0.52" stop-color="#0b1729" />
+      <stop offset="1" stop-color="#181733" />
     </linearGradient>
     <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#61e6dc" />
-      <stop offset="1" stop-color="#8b9eff" />
+      <stop offset="0" stop-color="#64f0d7" />
+      <stop offset="0.52" stop-color="#67c8ff" />
+      <stop offset="1" stop-color="#a48cff" />
     </linearGradient>
-    <radialGradient id="glow" cx="75%" cy="52%" r="45%">
-      <stop offset="0" stop-color="#528cf0" stop-opacity="0.19" />
-      <stop offset="1" stop-color="#528cf0" stop-opacity="0" />
+    <linearGradient id="card" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#182a3b" stop-opacity="0.96" />
+      <stop offset="1" stop-color="#172039" stop-opacity="0.88" />
+    </linearGradient>
+    <radialGradient id="aura">
+      <stop offset="0" stop-color="#4cc9ee" stop-opacity="0.24" />
+      <stop offset="0.58" stop-color="#8c72ff" stop-opacity="0.10" />
+      <stop offset="1" stop-color="#8c72ff" stop-opacity="0" />
     </radialGradient>
-    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
-      <path d="M40 0H0V40" fill="none" stroke="#a6c4ff" stroke-opacity="0.055" stroke-width="1" />
+    <pattern id="grid" width="36" height="36" patternUnits="userSpaceOnUse">
+      <path d="M36 0H0V36" fill="none" stroke="#a8ccff" stroke-opacity="0.055" stroke-width="1" />
+      <circle cx="0" cy="0" r="1.1" fill="#92baff" fill-opacity="0.15" />
     </pattern>
-    <filter id="softGlow" x="-50%" y="-50%" width="200%" height="200%">
-      <feGaussianBlur stdDeviation="5" result="blur" />
+    <filter id="glow" x="-80%" y="-80%" width="260%" height="260%">
+      <feGaussianBlur stdDeviation="7" result="blur" />
       <feMerge><feMergeNode in="blur" /><feMergeNode in="SourceGraphic" /></feMerge>
     </filter>
   </defs>
 
-  <rect width="1400" height="320" rx="24" fill="url(#background)" />
-  <rect width="1400" height="320" rx="24" fill="url(#grid)" />
-  <rect width="1400" height="320" rx="24" fill="url(#glow)" />
-  <path d="M0 278C260 248 410 314 670 276s478-58 730-25v69H0z" fill="#07101c" fill-opacity="0.45" />
-
-  <g fill="none" stroke="#7ddde1" stroke-opacity="0.23" stroke-width="1.2">
-    <path d="M930 90l92 42 86-44 82 59 100-39" />
-    <path d="M950 210l72-78 86 78 82-63 100 63" />
-    <path d="M1022 132v78m86-122v122m82-63v63m100-102v102" stroke-opacity="0.15" />
-    <circle cx="930" cy="90" r="4" fill="#68ded7" />
-    <circle cx="1022" cy="132" r="4" fill="#68ded7" />
-    <circle cx="1108" cy="88" r="4" fill="#9aa9ff" />
-    <circle cx="1190" cy="147" r="4" fill="#68ded7" />
-    <circle cx="1290" cy="108" r="4" fill="#9aa9ff" />
-    <circle cx="950" cy="210" r="4" fill="#9aa9ff" />
-    <circle cx="1022" cy="210" r="4" fill="#68ded7" />
-    <circle cx="1108" cy="210" r="4" fill="#68ded7" />
-    <circle cx="1290" cy="210" r="4" fill="#68ded7" />
-  </g>
+  <rect width="1440" height="380" rx="28" fill="url(#bg)" />
+  <rect width="1440" height="380" rx="28" fill="url(#grid)" />
+  <ellipse cx="1120" cy="187" rx="390" ry="290" fill="url(#aura)" />
+  <path d="M0 325C250 278 440 365 720 318s469-47 720 4v58H0z" fill="#060d18" fill-opacity="0.42" />
+  <path d="M0 324C254 277 445 364 720 318s467-47 720 4" fill="none" stroke="url(#accent)" stroke-opacity="0.26" stroke-width="1.4" />
 
   <g font-family="Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, sans-serif">
-    <text x="92" y="92" fill="#72dedb" font-size="14" font-weight="700" letter-spacing="3.2">SOFTWARE DEVELOPER</text>
-    <text x="88" y="158" fill="#f3f7ff" font-size="48" font-weight="700" letter-spacing="-1.6">Jithin Seemakurthi</text>
-    <rect x="92" y="184" width="82" height="3" rx="1.5" fill="url(#accent)" />
-    <text x="92" y="222" fill="#c3cede" font-size="18" font-weight="500">Applied AI · Geospatial systems · Real-time applications</text>
-    <text x="92" y="256" fill="#8293aa" font-size="12" font-weight="600" letter-spacing="1.7">LOCAL-FIRST AI  /  DATA PRODUCTS  /  HUMAN-CENTERED TOOLS</text>
+    <rect x="96" y="66" width="238" height="32" rx="16" fill="#102738" stroke="#6ce6dc" stroke-opacity="0.32" />
+    <circle cx="116" cy="82" r="4" fill="#65efda" />
+    <text x="130" y="86" fill="#9cece4" font-size="11" font-weight="700" letter-spacing="1.8">SOFTWARE · AI · DATA</text>
+
+    <text x="92" y="165" fill="#f4f7ff" font-size="55" font-weight="750" letter-spacing="-2.2">Jithin Seemakurthi</text>
+    <rect x="98" y="188" width="112" height="4" rx="2" fill="url(#accent)" />
+    <text x="98" y="233" fill="#d2dced" font-size="20" font-weight="500">Building software where AI meets the real world.</text>
+    <text x="98" y="273" fill="#91a4bc" font-size="14" font-weight="600" letter-spacing="0.35">Local AI  ·  Geospatial intelligence  ·  Real-time products</text>
+    <text x="98" y="337" fill="#637890" font-size="10" font-weight="700" letter-spacing="2.1">DESIGNING USEFUL SYSTEMS FROM COMPLEX DATA</text>
   </g>
 
-  <g filter="url(#softGlow)" opacity="0.85">
-    <circle cx="1108" cy="88" r="2.5" fill="#b7c4ff" />
-    <circle cx="1190" cy="147" r="2.5" fill="#7cf1e5" />
-    <circle cx="1290" cy="210" r="2.5" fill="#7cf1e5" />
+  <g fill="none" stroke="url(#accent)" stroke-opacity="0.42" stroke-width="1.2">
+    <circle cx="1174" cy="187" r="138" stroke-dasharray="2 10" />
+    <circle cx="1174" cy="187" r="102" stroke-opacity="0.25" />
+    <path d="M1008 108c67 31 75 99 166 79s110-70 181-40" />
+    <path d="M1018 263c67-38 100-89 156-76s111 91 180 72" />
+    <path d="M1109 93c28 54 25 129 65 189m64-201c-49 50-55 126-20 203" stroke-opacity="0.22" />
+  </g>
+  <circle cx="1174" cy="187" r="72" fill="url(#aura)" />
+  <circle cx="1174" cy="187" r="25" fill="#132e42" stroke="url(#accent)" stroke-opacity="0.88" stroke-width="1.5" />
+  <circle cx="1174" cy="187" r="7" fill="url(#accent)" filter="url(#glow)" />
+
+  <g font-family="Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, sans-serif" font-size="10" font-weight="700" letter-spacing="1.25">
+    <g>
+      <rect x="1034" y="70" width="140" height="38" rx="13" fill="url(#card)" stroke="#71e8dc" stroke-opacity="0.42" />
+      <circle cx="1053" cy="89" r="3.5" fill="#69ebd8" />
+      <text x="1065" y="93" fill="#d9f8f4">LOCAL AI</text>
+    </g>
+    <g>
+      <rect x="1237" y="135" width="142" height="38" rx="13" fill="url(#card)" stroke="#88b8ff" stroke-opacity="0.42" />
+      <circle cx="1256" cy="154" r="3.5" fill="#84b8ff" />
+      <text x="1268" y="158" fill="#e1ecff">GEO DATA</text>
+    </g>
+    <g>
+      <rect x="1016" y="254" width="158" height="38" rx="13" fill="url(#card)" stroke="#a78dff" stroke-opacity="0.42" />
+      <circle cx="1035" cy="273" r="3.5" fill="#a78dff" />
+      <text x="1047" y="277" fill="#ece5ff">LIVE SYSTEMS</text>
+    </g>
+    <g>
+      <rect x="1237" y="243" width="142" height="38" rx="13" fill="url(#card)" stroke="#69dfd1" stroke-opacity="0.38" />
+      <circle cx="1256" cy="262" r="3.5" fill="#69dfd1" />
+      <text x="1268" y="266" fill="#d9f8f4">DATA TOOLS</text>
+    </g>
+  </g>
+
+  <g fill="#b1c7ff" filter="url(#glow)">
+    <circle cx="1008" cy="108" r="3" />
+    <circle cx="1355" cy="147" r="3" />
+    <circle cx="1018" cy="263" r="3" />
+    <circle cx="1350" cy="259" r="3" />
   </g>
 </svg>
