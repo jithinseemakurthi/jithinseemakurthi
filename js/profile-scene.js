@@ -15,14 +15,14 @@ if (canvas && frame) {
     const camera = new THREE.PerspectiveCamera(34, 1, 0.1, 80);
     camera.position.set(0, 0, 5.7);
 
-    scene.add(new THREE.AmbientLight(0xb7d4ef, 1.35));
-    const keyLight = new THREE.PointLight(0x72e8da, 38, 12, 2);
+    scene.add(new THREE.AmbientLight(0xd8d0bd, 1.1));
+    const keyLight = new THREE.PointLight(0xa9b9a6, 25, 12, 2);
     keyLight.position.set(-2.2, 2.4, 3.4);
     scene.add(keyLight);
-    const violetLight = new THREE.PointLight(0x8d78ff, 44, 13, 2);
+    const violetLight = new THREE.PointLight(0xafa0a5, 27, 13, 2);
     violetLight.position.set(2.7, -1.4, 2.7);
     scene.add(violetLight);
-    const warmLight = new THREE.PointLight(0xf1bd71, 26, 10, 2);
+    const warmLight = new THREE.PointLight(0xd4bd92, 22, 10, 2);
     warmLight.position.set(0.5, 3, -2);
     scene.add(warmLight);
 
@@ -30,19 +30,19 @@ if (canvas && frame) {
     scene.add(world);
 
     const goldMaterial = new THREE.MeshPhysicalMaterial({
-      color: 0xc78c45,
-      metalness: 0.82,
-      roughness: 0.24,
-      clearcoat: 0.9,
-      clearcoatRoughness: 0.16,
-      emissive: 0x4c260b,
-      emissiveIntensity: 0.16,
-      envMapIntensity: 1.4,
+      color: 0xb48a56,
+      metalness: 0.72,
+      roughness: 0.3,
+      clearcoat: 0.82,
+      clearcoatRoughness: 0.22,
+      emissive: 0x33271b,
+      emissiveIntensity: 0.1,
+      envMapIntensity: 1.15,
     });
-    const tealMaterial = new THREE.MeshStandardMaterial({ color: 0x69ead7, metalness: 0.4, roughness: 0.25, emissive: 0x0a6057, emissiveIntensity: 0.45 });
-    const violetMaterial = new THREE.MeshStandardMaterial({ color: 0xa58aff, metalness: 0.38, roughness: 0.28, emissive: 0x392486, emissiveIntensity: 0.42 });
-    const blueMaterial = new THREE.MeshStandardMaterial({ color: 0x77baff, metalness: 0.35, roughness: 0.3, emissive: 0x174985, emissiveIntensity: 0.38 });
-    const roseMaterial = new THREE.MeshStandardMaterial({ color: 0xf084a2, metalness: 0.38, roughness: 0.27, emissive: 0x711f47, emissiveIntensity: 0.42 });
+    const tealMaterial = new THREE.MeshStandardMaterial({ color: 0x91afa0, metalness: 0.28, roughness: 0.34, emissive: 0x26372f, emissiveIntensity: 0.2 });
+    const violetMaterial = new THREE.MeshStandardMaterial({ color: 0xa69da8, metalness: 0.24, roughness: 0.36, emissive: 0x37313a, emissiveIntensity: 0.18 });
+    const blueMaterial = new THREE.MeshStandardMaterial({ color: 0x9eabb2, metalness: 0.24, roughness: 0.38, emissive: 0x303a3c, emissiveIntensity: 0.16 });
+    const roseMaterial = new THREE.MeshStandardMaterial({ color: 0xb68f8d, metalness: 0.26, roughness: 0.35, emissive: 0x3c2928, emissiveIntensity: 0.18 });
 
     const bangleGroup = new THREE.Group();
     world.add(bangleGroup);
@@ -52,7 +52,7 @@ if (canvas && frame) {
 
     const innerThread = new THREE.Mesh(
       new THREE.TorusGeometry(1.08, 0.018, 10, 180),
-      new THREE.MeshStandardMaterial({ color: 0x69ead7, metalness: 0.4, roughness: 0.3, emissive: 0x075e57, emissiveIntensity: 0.45 }),
+      new THREE.MeshStandardMaterial({ color: 0x9bb4a2, metalness: 0.28, roughness: 0.34, emissive: 0x27382e, emissiveIntensity: 0.2 }),
     );
     innerThread.rotation.copy(bangle.rotation);
     innerThread.scale.setScalar(0.89);
@@ -60,28 +60,28 @@ if (canvas && frame) {
 
     const orbitGroup = new THREE.Group();
     world.add(orbitGroup);
-    const orbitMaterial = new THREE.MeshBasicMaterial({ color: 0x8fbdf5, transparent: true, opacity: 0.35 });
+    const orbitMaterial = new THREE.MeshBasicMaterial({ color: 0xb5aa92, transparent: true, opacity: 0.24 });
     const orbitA = new THREE.Mesh(new THREE.TorusGeometry(1.69, 0.006, 8, 180), orbitMaterial);
     orbitA.rotation.set(0.92, 0.35, 0.12);
     orbitGroup.add(orbitA);
-    const orbitB = new THREE.Mesh(new THREE.TorusGeometry(1.87, 0.005, 8, 180), new THREE.MeshBasicMaterial({ color: 0x77e9db, transparent: true, opacity: 0.24 }));
+    const orbitB = new THREE.Mesh(new THREE.TorusGeometry(1.87, 0.005, 8, 180), new THREE.MeshBasicMaterial({ color: 0xa3b3a4, transparent: true, opacity: 0.18 }));
     orbitB.rotation.set(0.25, 1.08, -0.25);
     orbitGroup.add(orbitB);
 
     const center = new THREE.Mesh(
       new THREE.IcosahedronGeometry(0.28, 2),
-      new THREE.MeshPhysicalMaterial({ color: 0x1a3044, metalness: 0.42, roughness: 0.2, clearcoat: 1, emissive: 0x0c3540, emissiveIntensity: 0.55 }),
+      new THREE.MeshPhysicalMaterial({ color: 0x303b36, metalness: 0.32, roughness: 0.28, clearcoat: 0.8, emissive: 0x283329, emissiveIntensity: 0.22 }),
     );
     center.position.z = 0.08;
     world.add(center);
     const coreWire = new THREE.Mesh(
       new THREE.IcosahedronGeometry(0.43, 1),
-      new THREE.MeshBasicMaterial({ color: 0x8ce7e4, wireframe: true, transparent: true, opacity: 0.28 }),
+      new THREE.MeshBasicMaterial({ color: 0xb4b9a5, wireframe: true, transparent: true, opacity: 0.2 }),
     );
     coreWire.position.copy(center.position);
     world.add(coreWire);
 
-    const palette = [tealMaterial, violetMaterial, blueMaterial, roseMaterial, new THREE.MeshStandardMaterial({ color: 0xf0c578, metalness: 0.48, roughness: 0.26, emissive: 0x67400d, emissiveIntensity: 0.35 })];
+    const palette = [tealMaterial, violetMaterial, blueMaterial, roseMaterial, new THREE.MeshStandardMaterial({ color: 0xc8aa78, metalness: 0.34, roughness: 0.32, emissive: 0x423520, emissiveIntensity: 0.18 })];
     const orbitNodes = [];
     const nodeCount = 5;
     for (let index = 0; index < nodeCount; index += 1) {
@@ -120,7 +120,7 @@ if (canvas && frame) {
     }
     const starsGeometry = new THREE.BufferGeometry();
     starsGeometry.setAttribute('position', new THREE.BufferAttribute(starPositions, 3));
-    const stars = new THREE.Points(starsGeometry, new THREE.PointsMaterial({ color: 0x9cbcf0, size: 0.012, transparent: true, opacity: 0.58, sizeAttenuation: true }));
+    const stars = new THREE.Points(starsGeometry, new THREE.PointsMaterial({ color: 0xc6bda8, size: 0.012, transparent: true, opacity: 0.4, sizeAttenuation: true }));
     world.add(stars);
 
     const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;

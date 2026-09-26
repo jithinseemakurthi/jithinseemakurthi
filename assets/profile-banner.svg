@@ -1,32 +1,32 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1440" height="380" viewBox="0 0 1440 380" role="img" aria-labelledby="title description">
-  <title id="title">Jithin Seemakurthi — Building useful intelligence</title>
-  <desc id="description">A vibrant technology banner representing local AI, geospatial intelligence, and real-time software.</desc>
+  <title id="title">Jithin Seemakurthi — Software Developer</title>
+  <desc id="description">A refined charcoal, sage, and champagne banner linking to an interactive 3D portfolio.</desc>
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#071521" />
-      <stop offset="0.52" stop-color="#0b1729" />
-      <stop offset="1" stop-color="#181733" />
+      <stop offset="0" stop-color="#101817" />
+      <stop offset="0.55" stop-color="#19221f" />
+      <stop offset="1" stop-color="#292521" />
     </linearGradient>
     <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#64f0d7" />
-      <stop offset="0.52" stop-color="#67c8ff" />
-      <stop offset="1" stop-color="#a48cff" />
+      <stop offset="0" stop-color="#a9b9a6" />
+      <stop offset="0.56" stop-color="#d5c19a" />
+      <stop offset="1" stop-color="#b19e98" />
     </linearGradient>
     <linearGradient id="card" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#182a3b" stop-opacity="0.96" />
-      <stop offset="1" stop-color="#172039" stop-opacity="0.88" />
+      <stop offset="0" stop-color="#29332e" stop-opacity="0.97" />
+      <stop offset="1" stop-color="#282927" stop-opacity="0.93" />
     </linearGradient>
     <radialGradient id="aura">
-      <stop offset="0" stop-color="#4cc9ee" stop-opacity="0.24" />
-      <stop offset="0.58" stop-color="#8c72ff" stop-opacity="0.10" />
-      <stop offset="1" stop-color="#8c72ff" stop-opacity="0" />
+      <stop offset="0" stop-color="#9aad9c" stop-opacity="0.19" />
+      <stop offset="0.6" stop-color="#bba77f" stop-opacity="0.08" />
+      <stop offset="1" stop-color="#bba77f" stop-opacity="0" />
     </radialGradient>
-    <pattern id="grid" width="36" height="36" patternUnits="userSpaceOnUse">
-      <path d="M36 0H0V36" fill="none" stroke="#a8ccff" stroke-opacity="0.055" stroke-width="1" />
-      <circle cx="0" cy="0" r="1.1" fill="#92baff" fill-opacity="0.15" />
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#d3c6ac" stroke-opacity="0.035" stroke-width="1" />
+      <circle cx="0" cy="0" r="1" fill="#cdbb98" fill-opacity="0.1" />
     </pattern>
-    <filter id="glow" x="-80%" y="-80%" width="260%" height="260%">
-      <feGaussianBlur stdDeviation="7" result="blur" />
+    <filter id="softGlow" x="-80%" y="-80%" width="260%" height="260%">
+      <feGaussianBlur stdDeviation="5" result="blur" />
       <feMerge><feMergeNode in="blur" /><feMergeNode in="SourceGraphic" /></feMerge>
     </filter>
   </defs>
@@ -34,76 +34,68 @@
   <rect width="1440" height="380" rx="28" fill="url(#bg)" />
   <rect width="1440" height="380" rx="28" fill="url(#grid)" />
   <ellipse cx="1120" cy="187" rx="390" ry="290" fill="url(#aura)" />
-  <path d="M0 325C250 278 440 365 720 318s469-47 720 4v58H0z" fill="#060d18" fill-opacity="0.42" />
-  <path d="M0 324C254 277 445 364 720 318s467-47 720 4" fill="none" stroke="url(#accent)" stroke-opacity="0.26" stroke-width="1.4" />
+  <path d="M0 325C250 278 440 365 720 318s469-47 720 4v58H0z" fill="#0b1110" fill-opacity="0.46" />
+  <path d="M0 324C254 277 445 364 720 318s467-47 720 4" fill="none" stroke="url(#accent)" stroke-opacity="0.18" stroke-width="1.3" />
 
   <g font-family="Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, sans-serif">
-    <rect x="96" y="66" width="238" height="32" rx="16" fill="#102738" stroke="#6ce6dc" stroke-opacity="0.32" />
-    <circle cx="116" cy="82" r="4" fill="#65efda" />
-    <text x="130" y="86" fill="#9cece4" font-size="11" font-weight="700" letter-spacing="1.8">SOFTWARE · AI · DATA</text>
+    <rect x="96" y="66" width="238" height="32" rx="16" fill="#26322d" stroke="#acb7a3" stroke-opacity="0.28" />
+    <circle cx="116" cy="82" r="3.6" fill="#b1bfa7" />
+    <text x="130" y="86" fill="#d7d6c7" font-size="11" font-weight="700" letter-spacing="1.8">SOFTWARE · APPLIED AI · DATA</text>
 
-    <text x="92" y="165" fill="#f4f7ff" font-size="55" font-weight="750" letter-spacing="-2.2">Jithin Seemakurthi</text>
+    <text x="92" y="165" fill="#f1eee6" font-size="55" font-weight="700" letter-spacing="-2.2">Jithin Seemakurthi</text>
     <rect x="98" y="188" width="112" height="4" rx="2" fill="url(#accent)" />
-    <text x="98" y="233" fill="#d2dced" font-size="20" font-weight="500">Building software where AI meets the real world.</text>
-    <text x="98" y="273" fill="#91a4bc" font-size="14" font-weight="600" letter-spacing="0.35">Local AI  ·  Geospatial intelligence  ·  Real-time products</text>
-    <text x="98" y="337" fill="#637890" font-size="10" font-weight="700" letter-spacing="2.1">DESIGNING USEFUL SYSTEMS FROM COMPLEX DATA</text>
+    <text x="98" y="233" fill="#e1ddd2" font-size="20" font-weight="500">Building useful technology for a changing world.</text>
+    <text x="98" y="273" fill="#b8b8aa" font-size="14" font-weight="600" letter-spacing="0.35">Local AI  ·  Geospatial intelligence  ·  Real-time products</text>
+    <text x="98" y="337" fill="#8b9087" font-size="10" font-weight="700" letter-spacing="2.1">DESIGNING USEFUL SYSTEMS FROM COMPLEX DATA</text>
   </g>
 
-  <g fill="none" stroke="url(#accent)" stroke-opacity="0.42" stroke-width="1.2">
-    <circle cx="1174" cy="187" r="138" stroke-dasharray="2 10">
-      <animateTransform attributeName="transform" type="rotate" values="0 1174 187;360 1174 187" dur="58s" repeatCount="indefinite" />
+  <g fill="none" stroke="url(#accent)" stroke-opacity="0.32" stroke-width="1.15">
+    <circle cx="1174" cy="187" r="138" stroke-dasharray="2 12">
+      <animateTransform attributeName="transform" type="rotate" values="0 1174 187;360 1174 187" dur="82s" repeatCount="indefinite" />
     </circle>
-    <circle cx="1174" cy="187" r="102" stroke-opacity="0.25" />
+    <circle cx="1174" cy="187" r="102" stroke-opacity="0.2" />
     <path d="M1008 108c67 31 75 99 166 79s110-70 181-40" />
     <path d="M1018 263c67-38 100-89 156-76s111 91 180 72" />
-    <path d="M1109 93c28 54 25 129 65 189m64-201c-49 50-55 126-20 203" stroke-opacity="0.22" />
+    <path d="M1109 93c28 54 25 129 65 189m64-201c-49 50-55 126-20 203" stroke-opacity="0.16" />
   </g>
   <circle cx="1174" cy="187" r="72" fill="url(#aura)" />
-  <circle cx="1174" cy="187" r="25" fill="#132e42" stroke="url(#accent)" stroke-opacity="0.88" stroke-width="1.5" />
-  <circle cx="1174" cy="187" r="7" fill="url(#accent)" filter="url(#glow)">
-    <animate attributeName="r" values="6;9;6" dur="3.6s" repeatCount="indefinite" />
-    <animate attributeName="opacity" values="0.65;1;0.65" dur="3.6s" repeatCount="indefinite" />
+  <circle cx="1174" cy="187" r="25" fill="#25302c" stroke="url(#accent)" stroke-opacity="0.66" stroke-width="1.5" />
+  <circle cx="1174" cy="187" r="6.5" fill="#c6b58f" filter="url(#softGlow)">
+    <animate attributeName="r" values="6;7.5;6" dur="5.2s" repeatCount="indefinite" />
+    <animate attributeName="opacity" values="0.62;0.92;0.62" dur="5.2s" repeatCount="indefinite" />
   </circle>
 
   <g font-family="Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, sans-serif" font-size="10" font-weight="700" letter-spacing="1.25">
     <g>
-      <rect x="1034" y="70" width="140" height="38" rx="13" fill="url(#card)" stroke="#71e8dc" stroke-opacity="0.42" />
-      <circle cx="1053" cy="89" r="3.5" fill="#69ebd8">
-        <animate attributeName="opacity" values="0.45;1;0.45" dur="2.8s" repeatCount="indefinite" />
-      </circle>
-      <text x="1065" y="93" fill="#d9f8f4">LOCAL AI</text>
+      <rect x="1034" y="70" width="140" height="38" rx="13" fill="url(#card)" stroke="#9eb2a1" stroke-opacity="0.32" />
+      <circle cx="1053" cy="89" r="3.5" fill="#a8b8a8"><animate attributeName="opacity" values="0.55;0.9;0.55" dur="4.5s" repeatCount="indefinite" /></circle>
+      <text x="1065" y="93" fill="#e1e2d7">LOCAL AI</text>
     </g>
     <g>
-      <rect x="1237" y="135" width="142" height="38" rx="13" fill="url(#card)" stroke="#88b8ff" stroke-opacity="0.42" />
-      <circle cx="1256" cy="154" r="3.5" fill="#84b8ff">
-        <animate attributeName="opacity" values="0.5;1;0.5" dur="3.3s" repeatCount="indefinite" />
-      </circle>
-      <text x="1268" y="158" fill="#e1ecff">GEO DATA</text>
+      <rect x="1237" y="135" width="142" height="38" rx="13" fill="url(#card)" stroke="#b0b3b4" stroke-opacity="0.3" />
+      <circle cx="1256" cy="154" r="3.5" fill="#b2b8bb"><animate attributeName="opacity" values="0.6;0.95;0.6" dur="5s" repeatCount="indefinite" /></circle>
+      <text x="1268" y="158" fill="#e3e3dc">GEO DATA</text>
     </g>
     <g>
-      <rect x="1016" y="254" width="158" height="38" rx="13" fill="url(#card)" stroke="#a78dff" stroke-opacity="0.42" />
-      <circle cx="1035" cy="273" r="3.5" fill="#a78dff">
-        <animate attributeName="opacity" values="0.45;1;0.45" dur="3.1s" repeatCount="indefinite" />
-      </circle>
-      <text x="1047" y="277" fill="#ece5ff">LIVE SYSTEMS</text>
+      <rect x="1016" y="254" width="158" height="38" rx="13" fill="url(#card)" stroke="#b49d99" stroke-opacity="0.3" />
+      <circle cx="1035" cy="273" r="3.5" fill="#b69e99"><animate attributeName="opacity" values="0.55;0.9;0.55" dur="4.8s" repeatCount="indefinite" /></circle>
+      <text x="1047" y="277" fill="#e6ded7">LIVE SYSTEMS</text>
     </g>
     <g>
-      <rect x="1237" y="243" width="142" height="38" rx="13" fill="url(#card)" stroke="#69dfd1" stroke-opacity="0.38" />
-      <circle cx="1256" cy="262" r="3.5" fill="#69dfd1">
-        <animate attributeName="opacity" values="0.45;1;0.45" dur="2.9s" repeatCount="indefinite" />
-      </circle>
-      <text x="1268" y="266" fill="#d9f8f4">DATA TOOLS</text>
+      <rect x="1237" y="243" width="142" height="38" rx="13" fill="url(#card)" stroke="#c4b18f" stroke-opacity="0.29" />
+      <circle cx="1256" cy="262" r="3.5" fill="#c8b68f"><animate attributeName="opacity" values="0.58;0.92;0.58" dur="5.4s" repeatCount="indefinite" /></circle>
+      <text x="1268" y="266" fill="#e8e1d4">DATA TOOLS</text>
     </g>
   </g>
 
-  <g fill="#b1c7ff" filter="url(#glow)">
-    <circle cx="1008" cy="108" r="3" />
-    <circle cx="1355" cy="147" r="3" />
-    <circle cx="1018" cy="263" r="3" />
-    <circle cx="1350" cy="259" r="3" />
+  <g fill="#d5c5a6" filter="url(#softGlow)" opacity="0.7">
+    <circle cx="1008" cy="108" r="2.5" />
+    <circle cx="1355" cy="147" r="2.5" />
+    <circle cx="1018" cy="263" r="2.5" />
+    <circle cx="1350" cy="259" r="2.5" />
   </g>
   <g font-family="Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, sans-serif">
-    <rect x="1166" y="326" width="200" height="30" rx="15" fill="#0e2431" stroke="#64f0d7" stroke-opacity="0.34" />
-    <text x="1183" y="345" fill="#a9f1e8" font-size="9" font-weight="700" letter-spacing="1.3">CLICK TO ENTER THE 3D PROFILE</text>
+    <rect x="1166" y="326" width="200" height="30" rx="15" fill="#27312d" stroke="#b3b59f" stroke-opacity="0.28" />
+    <text x="1183" y="345" fill="#d7d4c5" font-size="9" font-weight="700" letter-spacing="1.3">CLICK TO ENTER THE 3D PROFILE</text>
   </g>
 </svg>

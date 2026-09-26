@@ -1,6 +1,9 @@
 <div align="center">
   <a href="https://jithinseemakurthi.github.io/jithinseemakurthi/">
-    <img src="./assets/profile-banner.svg" alt="Jithin Seemakurthi — click to open the interactive 3D portfolio" width="100%" />
+    <picture>
+      <source media="(max-width: 640px)" srcset="./assets/profile-banner-mobile.svg" />
+      <img src="./assets/profile-banner.svg" alt="Jithin Seemakurthi — click to open the interactive 3D portfolio" width="100%" />
+    </picture>
   </a>
 </div>
 
@@ -8,8 +11,8 @@
   <h2>Building software where AI meets the real world.</h2>
   <p>I turn complex data into clear, useful products—spanning local AI, geospatial risk, equipment telemetry, and consent-based real-time apps.</p>
   <p>
-    <a href="https://jithinseemakurthi.github.io/jithinseemakurthi/"><img src="https://img.shields.io/badge/ENTER-INTERACTIVE%203D%20PORTFOLIO-64F0D7?style=for-the-badge&logo=threedotjs&logoColor=071521" alt="Enter the interactive 3D portfolio" /></a>
-    <a href="https://vibe-guider.vercel.app"><img src="https://img.shields.io/badge/OPEN%20VIBE__GUIDER-LIVE%20DEMO-59D9CF?style=for-the-badge&logo=vercel&logoColor=071521" alt="Open VIBE_GUIDER live demo" /></a>
+    <a href="https://jithinseemakurthi.github.io/jithinseemakurthi/"><img src="https://img.shields.io/badge/ENTER-INTERACTIVE%203D%20PORTFOLIO-A9BCAA?style=for-the-badge&logo=threedotjs&logoColor=182019" alt="Enter the interactive 3D portfolio" /></a>
+    <a href="https://vibe-guider.vercel.app"><img src="https://img.shields.io/badge/OPEN%20VIBE__GUIDER-LIVE%20DEMO-829F8B?style=for-the-badge&logo=vercel&logoColor=182019" alt="Open VIBE_GUIDER live demo" /></a>
     <a href="https://github.com/jithinseemakurthi?tab=repositories"><img src="https://img.shields.io/badge/EXPLORE-PROJECTS-202B3B?style=for-the-badge&logo=github&logoColor=EAF2FF" alt="Explore GitHub projects" /></a>
   </p>
 </div>
