@@ -50,7 +50,9 @@
   </g>
 
   <g fill="none" stroke="url(#accent)" stroke-opacity="0.42" stroke-width="1.2">
-    <circle cx="1174" cy="187" r="138" stroke-dasharray="2 10" />
+    <circle cx="1174" cy="187" r="138" stroke-dasharray="2 10">
+      <animateTransform attributeName="transform" type="rotate" values="0 1174 187;360 1174 187" dur="58s" repeatCount="indefinite" />
+    </circle>
     <circle cx="1174" cy="187" r="102" stroke-opacity="0.25" />
     <path d="M1008 108c67 31 75 99 166 79s110-70 181-40" />
     <path d="M1018 263c67-38 100-89 156-76s111 91 180 72" />
@@ -58,27 +60,38 @@
   </g>
   <circle cx="1174" cy="187" r="72" fill="url(#aura)" />
   <circle cx="1174" cy="187" r="25" fill="#132e42" stroke="url(#accent)" stroke-opacity="0.88" stroke-width="1.5" />
-  <circle cx="1174" cy="187" r="7" fill="url(#accent)" filter="url(#glow)" />
+  <circle cx="1174" cy="187" r="7" fill="url(#accent)" filter="url(#glow)">
+    <animate attributeName="r" values="6;9;6" dur="3.6s" repeatCount="indefinite" />
+    <animate attributeName="opacity" values="0.65;1;0.65" dur="3.6s" repeatCount="indefinite" />
+  </circle>
 
   <g font-family="Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, sans-serif" font-size="10" font-weight="700" letter-spacing="1.25">
     <g>
       <rect x="1034" y="70" width="140" height="38" rx="13" fill="url(#card)" stroke="#71e8dc" stroke-opacity="0.42" />
-      <circle cx="1053" cy="89" r="3.5" fill="#69ebd8" />
+      <circle cx="1053" cy="89" r="3.5" fill="#69ebd8">
+        <animate attributeName="opacity" values="0.45;1;0.45" dur="2.8s" repeatCount="indefinite" />
+      </circle>
       <text x="1065" y="93" fill="#d9f8f4">LOCAL AI</text>
     </g>
     <g>
       <rect x="1237" y="135" width="142" height="38" rx="13" fill="url(#card)" stroke="#88b8ff" stroke-opacity="0.42" />
-      <circle cx="1256" cy="154" r="3.5" fill="#84b8ff" />
+      <circle cx="1256" cy="154" r="3.5" fill="#84b8ff">
+        <animate attributeName="opacity" values="0.5;1;0.5" dur="3.3s" repeatCount="indefinite" />
+      </circle>
       <text x="1268" y="158" fill="#e1ecff">GEO DATA</text>
     </g>
     <g>
       <rect x="1016" y="254" width="158" height="38" rx="13" fill="url(#card)" stroke="#a78dff" stroke-opacity="0.42" />
-      <circle cx="1035" cy="273" r="3.5" fill="#a78dff" />
+      <circle cx="1035" cy="273" r="3.5" fill="#a78dff">
+        <animate attributeName="opacity" values="0.45;1;0.45" dur="3.1s" repeatCount="indefinite" />
+      </circle>
       <text x="1047" y="277" fill="#ece5ff">LIVE SYSTEMS</text>
     </g>
     <g>
       <rect x="1237" y="243" width="142" height="38" rx="13" fill="url(#card)" stroke="#69dfd1" stroke-opacity="0.38" />
-      <circle cx="1256" cy="262" r="3.5" fill="#69dfd1" />
+      <circle cx="1256" cy="262" r="3.5" fill="#69dfd1">
+        <animate attributeName="opacity" values="0.45;1;0.45" dur="2.9s" repeatCount="indefinite" />
+      </circle>
       <text x="1268" y="266" fill="#d9f8f4">DATA TOOLS</text>
     </g>
   </g>
@@ -88,5 +101,9 @@
     <circle cx="1355" cy="147" r="3" />
     <circle cx="1018" cy="263" r="3" />
     <circle cx="1350" cy="259" r="3" />
+  </g>
+  <g font-family="Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, sans-serif">
+    <rect x="1166" y="326" width="200" height="30" rx="15" fill="#0e2431" stroke="#64f0d7" stroke-opacity="0.34" />
+    <text x="1183" y="345" fill="#a9f1e8" font-size="9" font-weight="700" letter-spacing="1.3">CLICK TO ENTER THE 3D PROFILE</text>
   </g>
 </svg>

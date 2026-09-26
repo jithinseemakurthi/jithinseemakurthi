@@ -1,11 +1,14 @@
 <div align="center">
-  <img src="./assets/profile-banner.svg" alt="Jithin Seemakurthi — Software developer working across applied AI, geospatial intelligence, and real-time systems" width="100%" />
+  <a href="https://jithinseemakurthi.github.io/jithinseemakurthi/">
+    <img src="./assets/profile-banner.svg" alt="Jithin Seemakurthi — click to open the interactive 3D portfolio" width="100%" />
+  </a>
 </div>
 
 <div align="center">
   <h2>Building software where AI meets the real world.</h2>
   <p>I turn complex data into clear, useful products—spanning local AI, geospatial risk, equipment telemetry, and consent-based real-time apps.</p>
   <p>
+    <a href="https://jithinseemakurthi.github.io/jithinseemakurthi/"><img src="https://img.shields.io/badge/ENTER-INTERACTIVE%203D%20PORTFOLIO-64F0D7?style=for-the-badge&logo=threedotjs&logoColor=071521" alt="Enter the interactive 3D portfolio" /></a>
     <a href="https://vibe-guider.vercel.app"><img src="https://img.shields.io/badge/OPEN%20VIBE__GUIDER-LIVE%20DEMO-59D9CF?style=for-the-badge&logo=vercel&logoColor=071521" alt="Open VIBE_GUIDER live demo" /></a>
     <a href="https://github.com/jithinseemakurthi?tab=repositories"><img src="https://img.shields.io/badge/EXPLORE-PROJECTS-202B3B?style=for-the-badge&logo=github&logoColor=EAF2FF" alt="Explore GitHub projects" /></a>
   </p>
@@ -44,6 +47,14 @@
       <a href="https://github.com/jithinseemakurthi/phoneinfo-live-location">Explore repository ↗</a>
     </td>
   </tr>
+  <tr>
+    <td colspan="2" valign="top">
+      <h3>💎 Lavanya Bangles</h3>
+      <p>A polished jewellery storefront with a reactive Three.js bangle studio, handcrafted product collections, colour previews, and WhatsApp ordering.</p>
+      <p><code>HTML</code> <code>CSS</code> <code>JavaScript</code> <code>Three.js</code></p>
+      <a href="https://github.com/jithinseemakurthi/lavanya-bangles">Explore repository ↗</a>
+    </td>
+  </tr>
 </table>
 
 <br />
@@ -67,7 +78,7 @@
 ## What I enjoy building
 
 <div align="center">
-  <strong>LOCAL-FIRST AI</strong> &nbsp;·&nbsp; <strong>GEO-SPATIAL DATA</strong> &nbsp;·&nbsp; <strong>REAL-TIME SYSTEMS</strong> &nbsp;·&nbsp; <strong>HUMAN-CENTERED TOOLS</strong>
+  <strong>LOCAL-FIRST AI</strong> &nbsp;·&nbsp; <strong>GEOSPATIAL DATA</strong> &nbsp;·&nbsp; <strong>REAL-TIME SYSTEMS</strong> &nbsp;·&nbsp; <strong>HUMAN-CENTERED TOOLS</strong>
 </div>
 
 <br />
