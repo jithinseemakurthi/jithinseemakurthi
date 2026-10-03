@@ -83,6 +83,13 @@ if (canvas && frame) {
 
     const palette = [tealMaterial, violetMaterial, blueMaterial, roseMaterial, new THREE.MeshStandardMaterial({ color: 0xc8aa78, metalness: 0.34, roughness: 0.32, emissive: 0x423520, emissiveIntensity: 0.18 })];
     const orbitNodes = [];
+    const projectUrls = [
+      'https://github.com/jithinseemakurthi/geosentinel-ner',
+      'https://github.com/jithinseemakurthi/VIBE_GUIDER',
+      'https://github.com/jithinseemakurthi/Predictive-Maintenance-AI',
+      'https://github.com/jithinseemakurthi/phoneinfo-live-location',
+      'https://github.com/jithinseemakurthi/lavanya-bangles',
+    ];
     const nodeCount = 5;
     for (let index = 0; index < nodeCount; index += 1) {
       const angle = (index / nodeCount) * Math.PI * 2 - Math.PI / 2;
@@ -101,9 +108,12 @@ if (canvas && frame) {
       node.userData.phase = index * 1.31;
       node.userData.baseY = node.position.y;
       node.userData.gem = gem;
+      node.userData.halo = halo;
+      node.userData.projectUrl = projectUrls[index];
       world.add(node);
       orbitNodes.push(node);
     }
+    const projectGems = orbitNodes.map((node) => node.userData.gem);
 
     const starsCount = 420;
     const starPositions = new Float32Array(starsCount * 3);
@@ -124,13 +134,88 @@ if (canvas && frame) {
     world.add(stars);
 
     const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-    const pointer = { x: 0, y: 0, targetX: 0, targetY: 0 };
-    canvas.addEventListener('pointermove', (event) => {
+    const pointer = {
+      x: 0,
+      y: 0,
+      targetX: 0,
+      targetY: 0,
+      dragging: false,
+      dragMoved: false,
+      lastX: 0,
+      lastY: 0,
+      startX: 0,
+      startY: 0,
+      dragRotationX: 0,
+      dragRotationY: 0,
+    };
+    const raycaster = new THREE.Raycaster();
+    const pointerNdc = new THREE.Vector2();
+    pointerNdc.set(2, 2);
+    const updatePointer = (event) => {
       const bounds = canvas.getBoundingClientRect();
       pointer.targetX = ((event.clientX - bounds.left) / bounds.width - 0.5) * 2;
       pointer.targetY = ((event.clientY - bounds.top) / bounds.height - 0.5) * 2;
+      pointerNdc.set(pointer.targetX, -pointer.targetY);
+    };
+    const findHoveredProject = () => {
+      raycaster.setFromCamera(pointerNdc, camera);
+      return raycaster.intersectObjects(projectGems, false)[0]?.object.userData.projectUrl ?? null;
+    };
+    const updateHoveredProject = () => {
+      const hoveredUrl = pointer.dragging ? null : findHoveredProject();
+      canvas.style.cursor = pointer.dragging ? 'grabbing' : hoveredUrl ? 'pointer' : 'grab';
+      for (const node of orbitNodes) {
+        const hovered = node.userData.projectUrl === hoveredUrl;
+        const scale = node.userData.gem.scale.x + ((hovered ? 1.7 : 1) - node.userData.gem.scale.x) * 0.16;
+        node.userData.gem.scale.setScalar(scale);
+        node.userData.halo.material.opacity += ((hovered ? 0.95 : 0.52) - node.userData.halo.material.opacity) * 0.16;
+      }
+    };
+    canvas.addEventListener('pointermove', (event) => {
+      updatePointer(event);
+      if (pointer.dragging) {
+        const deltaX = event.clientX - pointer.lastX;
+        const deltaY = event.clientY - pointer.lastY;
+        pointer.lastX = event.clientX;
+        pointer.lastY = event.clientY;
+        if (Math.hypot(event.clientX - pointer.startX, event.clientY - pointer.startY) > 5) {
+          pointer.dragMoved = true;
+        }
+        if (pointer.dragMoved) {
+          pointer.dragRotationY += deltaX * 0.008;
+          pointer.dragRotationX = THREE.MathUtils.clamp(pointer.dragRotationX + deltaY * 0.008, -0.65, 0.65);
+        }
+      }
     }, { passive: true });
-    canvas.addEventListener('pointerleave', () => { pointer.targetX = 0; pointer.targetY = 0; }, { passive: true });
+    canvas.addEventListener('pointerdown', (event) => {
+      pointer.dragging = true;
+      pointer.dragMoved = false;
+      pointer.lastX = pointer.startX = event.clientX;
+      pointer.lastY = pointer.startY = event.clientY;
+      canvas.setPointerCapture(event.pointerId);
+    });
+    const endDrag = (event) => {
+      pointer.dragging = false;
+      if (canvas.hasPointerCapture(event.pointerId)) canvas.releasePointerCapture(event.pointerId);
+    };
+    canvas.addEventListener('pointerup', endDrag);
+    canvas.addEventListener('pointercancel', endDrag);
+    canvas.addEventListener('click', (event) => {
+      if (pointer.dragMoved) {
+        pointer.dragMoved = false;
+        return;
+      }
+      updatePointer(event);
+      const projectUrl = findHoveredProject();
+      if (projectUrl) window.open(projectUrl, '_blank', 'noopener,noreferrer');
+    });
+    canvas.addEventListener('pointerleave', () => {
+      if (!pointer.dragging) {
+        pointer.targetX = 0;
+        pointer.targetY = 0;
+        pointerNdc.set(2, 2);
+      }
+    }, { passive: true });
 
     const resize = () => {
       const bounds = frame.getBoundingClientRect();
@@ -153,8 +238,8 @@ if (canvas && frame) {
       pointer.x += (pointer.targetX - pointer.x) * 0.035;
       pointer.y += (pointer.targetY - pointer.y) * 0.035;
 
-      world.rotation.y += ((reducedMotion ? 0 : time * 0.075) + pointer.x * 0.24 - world.rotation.y) * 0.035;
-      world.rotation.x += (-0.12 + pointer.y * 0.18 - world.rotation.x) * 0.035;
+      world.rotation.y += ((reducedMotion ? 0 : time * 0.075) + pointer.x * 0.24 + pointer.dragRotationY - world.rotation.y) * 0.035;
+      world.rotation.x += (-0.12 + pointer.y * 0.18 + pointer.dragRotationX - world.rotation.x) * 0.035;
       bangleGroup.rotation.z = reducedMotion ? -0.08 : Math.sin(time * 0.26) * 0.11 - 0.08;
       orbitGroup.rotation.z = reducedMotion ? 0.05 : time * 0.045 + 0.05;
       center.rotation.y = reducedMotion ? 0.1 : time * 0.23;
@@ -169,6 +254,7 @@ if (canvas && frame) {
         node.userData.gem.rotation.y += reducedMotion ? 0 : 0.006;
       }
 
+      updateHoveredProject();
       renderer.render(scene, camera);
     };
     animate();
