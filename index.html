@@ -2,145 +2,20 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#101615" />
-    <meta name="description" content="Jithin Seemakurthi — software developer building applied AI, geospatial, and real-time products." />
-    <meta property="og:title" content="Jithin Seemakurthi — Interactive Portfolio" />
-    <meta property="og:description" content="Applied AI, geospatial intelligence, and real-time systems." />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#080b12" />
+    <meta name="description" content="Jithin Seemakurthi builds full-stack products, AI agent systems, and connected technology for the physical world." />
+    <meta property="og:title" content="Jithin Seemakurthi | Full-stack · AI · ECE" />
+    <meta property="og:description" content="Software, intelligent agents, and electronics—designed to work together." />
     <meta property="og:url" content="https://jithinseemakurthi.github.io/jithinseemakurthi/" />
     <meta property="og:image" content="https://jithinseemakurthi.github.io/jithinseemakurthi/assets/profile-banner.svg" />
-    <title>Jithin Seemakurthi — Interactive Portfolio</title>
+    <title>Jithin Seemakurthi — Full-stack · AI · ECE</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="./styles.css" />
-    <script type="importmap">
-      {
-        "imports": {
-          "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js"
-        }
-      }
-    </script>
-    <script type="module" src="./js/profile-scene.js"></script>
   </head>
   <body>
-    <div class="ambient ambient--cyan" aria-hidden="true"></div>
-    <div class="ambient ambient--violet" aria-hidden="true"></div>
-
-    <header class="topbar">
-      <a class="wordmark" href="#top" aria-label="Jithin Seemakurthi home">
-        <span class="wordmark-icon">J<span>.</span></span>
-        <span>JITHIN <i>SEEMAKURTHI</i></span>
-      </a>
-      <nav aria-label="Main navigation">
-        <a href="#work">Selected work</a>
-        <a href="#focus">Focus</a>
-        <a class="nav-github" href="https://github.com/jithinseemakurthi" target="_blank" rel="noopener noreferrer">GitHub <span>↗</span></a>
-      </nav>
-    </header>
-
-    <main id="top">
-      <section class="hero shell" aria-labelledby="hero-title">
-        <div class="hero-copy">
-          <p class="eyebrow"><span class="status-dot"></span> Interactive portfolio <span class="eyebrow-divider">/</span> 3D experience</p>
-          <h1 id="hero-title">Building software<br />where <span>AI meets the real world.</span></h1>
-          <p class="hero-lead">I’m Jithin—a software developer working across applied AI, geospatial intelligence, and real-time applications. I turn complex data into clear, useful products.</p>
-          <div class="hero-actions">
-            <a class="button button--primary" href="#work">Explore selected work <span>↓</span></a>
-            <a class="button button--quiet" href="https://github.com/jithinseemakurthi" target="_blank" rel="noopener noreferrer">View GitHub <span>↗</span></a>
-          </div>
-          <div class="hero-topics" aria-label="Areas of focus">
-            <span>LOCAL-FIRST AI</span><span>GEO DATA</span><span>LIVE SYSTEMS</span>
-          </div>
-        </div>
-
-        <div class="scene-frame" id="scene-frame">
-          <div class="scene-topline">
-            <span class="scene-label"><span class="status-dot"></span> PROJECT CONSTELLATION</span>
-            <span class="scene-hint">MOVE · DRAG · CLICK NODES</span>
-          </div>
-          <canvas id="profile-scene" aria-label="Interactive 3D project constellation. Move to tilt, drag to rotate, or click a project node to open it."></canvas>
-          <div class="scene-chip scene-chip--ai">01 <span>LOCAL AI</span></div>
-          <div class="scene-chip scene-chip--geo">02 <span>GEO DATA</span></div>
-          <div class="scene-chip scene-chip--live">03 <span>LIVE SYSTEMS</span></div>
-          <div class="scene-caption"><span>↗</span> A portfolio you can move through</div>
-          <p class="scene-fallback" id="scene-fallback">Your browser can still explore every project below.</p>
-        </div>
-      </section>
-
-      <section class="signal-bar shell" aria-label="Portfolio themes">
-        <div><span class="signal-number">01</span><span>AI that runs close to the user</span></div>
-        <div><span class="signal-number">02</span><span>Geospatial tools for real-world risk</span></div>
-        <div><span class="signal-number">03</span><span>Responsive, data-rich experiences</span></div>
-      </section>
-
-      <section class="work-section shell" id="work" aria-labelledby="work-title">
-        <div class="section-heading">
-          <p class="eyebrow">A selection of things I build</p>
-          <h2 id="work-title">Ideas, made <span>tangible.</span></h2>
-          <p>Five projects exploring AI, geospatial systems, telemetry, and customer-facing experiences.</p>
-        </div>
-
-        <div class="project-grid">
-          <article class="project-card project-card--geo">
-            <div class="project-top"><span class="project-index">01 / GEOINTELLIGENCE</span><span class="project-icon">⌖</span></div>
-            <h3>GeoSentinel-NER</h3>
-            <p>A geospatial landslide early-warning platform for Northeast India, connecting weather, satellite, sensor, and citizen-report signals to risk and alerts.</p>
-            <div class="tech-tags"><span>Python</span><span>FastAPI</span><span>PostGIS</span><span>MapLibre</span></div>
-            <a class="project-link" href="https://github.com/jithinseemakurthi/geosentinel-ner" target="_blank" rel="noopener noreferrer">Explore project <span>↗</span></a>
-          </article>
-
-          <article class="project-card project-card--ai">
-            <div class="project-top"><span class="project-index">02 / LOCAL AI</span><span class="project-icon">✳</span></div>
-            <h3>VIBE_GUIDER</h3>
-            <p>A local-first Ollama workspace for chat, offline research, reasoning, and sampled-frame video analysis.</p>
-            <div class="tech-tags"><span>TypeScript</span><span>React</span><span>Node.js</span><span>Ollama</span></div>
-            <a class="project-link" href="https://github.com/jithinseemakurthi/VIBE_GUIDER" target="_blank" rel="noopener noreferrer">Explore project <span>↗</span></a>
-          </article>
-
-          <article class="project-card project-card--telemetry">
-            <div class="project-top"><span class="project-index">03 / CONDITION MONITORING</span><span class="project-icon">◉</span></div>
-            <h3>Predictive Maintenance AI</h3>
-            <p>An equipment-condition dashboard with CSV/REST telemetry ingestion, configurable operating bands, edge diagnostics, and work orders.</p>
-            <div class="tech-tags"><span>TypeScript</span><span>React</span><span>Recharts</span><span>Gemini</span></div>
-            <a class="project-link" href="https://github.com/jithinseemakurthi/Predictive-Maintenance-AI" target="_blank" rel="noopener noreferrer">Explore project <span>↗</span></a>
-          </article>
-
-          <article class="project-card project-card--live">
-            <div class="project-top"><span class="project-index">04 / REAL-TIME WEB</span><span class="project-icon">⌁</span></div>
-            <h3>PhoneInfo Live Location</h3>
-            <p>Phone-number metadata lookup and consent-based live location sharing with temporary sessions and WebSocket updates.</p>
-            <div class="tech-tags"><span>JavaScript</span><span>Node.js</span><span>WebSockets</span><span>Leaflet</span></div>
-            <a class="project-link" href="https://github.com/jithinseemakurthi/phoneinfo-live-location" target="_blank" rel="noopener noreferrer">Explore project <span>↗</span></a>
-          </article>
-
-          <article class="project-card project-card--craft">
-            <div class="project-top"><span class="project-index">05 / INTERACTIVE COMMERCE</span><span class="project-icon">✧</span></div>
-            <h3>Lavanya Bangles</h3>
-            <p>A jewellery storefront with a reactive 3D bangle studio, colour previews, product collections, and WhatsApp ordering.</p>
-            <div class="tech-tags"><span>Three.js</span><span>JavaScript</span><span>HTML</span><span>CSS</span></div>
-            <a class="project-link" href="https://github.com/jithinseemakurthi/lavanya-bangles" target="_blank" rel="noopener noreferrer">Explore project <span>↗</span></a>
-          </article>
-        </div>
-      </section>
-
-      <section class="focus-section" id="focus">
-        <div class="shell focus-inner">
-          <div>
-            <p class="eyebrow">The through line</p>
-            <h2>Technology should feel<br /><span>powerful and approachable.</span></h2>
-          </div>
-          <div class="focus-copy">
-            <p>I enjoy bringing complex systems to life through thoughtful interfaces—whether that means running AI locally, mapping environmental signals, or helping people explore a product in 3D.</p>
-            <a class="button button--primary" href="https://github.com/jithinseemakurthi?tab=repositories" target="_blank" rel="noopener noreferrer">Browse all repositories <span>↗</span></a>
-          </div>
-        </div>
-      </section>
-    </main>
-
-    <footer class="site-footer shell">
-      <a class="wordmark" href="#top"><span class="wordmark-icon">J<span>.</span></span><span>JITHIN <i>SEEMAKURTHI</i></span></a>
-      <span>Built with curiosity · <a href="https://github.com/jithinseemakurthi" target="_blank" rel="noopener noreferrer">GitHub ↗</a></span>
-    </footer>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>
